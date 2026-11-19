@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Masuk untuk mengelola operasional toko dan produksi Nabila Food."
+    />
+    <title>Masuk — Nabila Food</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <div class="hero" aria-hidden="true">
+        <img src="assets/hero.png" alt="" />
+      </div>
+
+      <section class="login-content" aria-labelledby="welcome-title">
+        <header class="welcome">
+          <h1 id="welcome-title">Selamat Datang!</h1>
+          <p>
+            Masuk untuk mengelola operasional toko Nabila Food &amp; produksi
+            Nabila Food harian
+          </p>
+        </header>
+
+        <form class="login-form" id="login-form">
+          <div class="field">
+            <label for="email">Email</label>
+            <div class="input-wrap">
+              <svg
+                class="field-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3.75 6.75h16.5v10.5H3.75z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="m4.5 7.5 7.5 5.25 7.5-5.25"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="username"
+                aria-label="Email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-row">
+              <label for="password">Kata Sandi</label>
+              <a class="forgot-link" href="#">Lupa Sandi?</a>
+            </div>
+            <div class="input-wrap">
+              <svg
+                class="field-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="5.5"
+                  y="10"
+                  width="13"
+                  height="10"
+                  rx="1.5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M8.5 10V7a3.5 3.5 0 0 1 7 0v3"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+                <circle cx="12" cy="15" r="1" fill="currentColor" />
+              </svg>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                aria-label="Kata Sandi"
+                required
+              />
+              <button
+                class="visibility-button"
+                type="button"
+                aria-label="Tampilkan kata sandi"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2.75 12s3.25-5.25 9.25-5.25S21.25 12 21.25 12 18 17.25 12 17.25 2.75 12 2.75 12Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="2.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <button class="submit-button" type="submit">
+            <span>Masuk Sekarang</span>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M4.5 12h14m-6-6 6 6-6 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>

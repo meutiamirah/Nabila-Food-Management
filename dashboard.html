@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ringkasan operasional harian Nabila Food."
+    />
+    <title>Dashboard — Nabila Food</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <header class="topbar">
+        <a class="brand" href="#dashboard" aria-label="Nabila Food Dashboard">
+          <span class="brand-mark" aria-hidden="true">🌱</span>
+          <span class="brand-copy">
+            <strong>Nabila Food</strong>
+            <small>Nabila Management System</small>
+          </span>
+        </a>
+        <div class="topbar-actions">
+          <button class="icon-button notification-button" type="button" aria-label="Notifikasi">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M18 9a6 6 0 0 0-12 0c0 7-2.5 7-2.5 9h17C20.5 16 18 16 18 9ZM10 21h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="notification-dot"></span>
+          </button>
+          <div class="avatar" aria-label="Profil Nurvi">N</div>
+        </div>
+      </header>
+
+      <main id="dashboard" class="dashboard-content">
+        <div class="greeting-row">
+          <h1>Halo, Pak Nurvi! <span aria-hidden="true">👋</span></h1>
+          <div class="date-pill">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="4" y="5.5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.8" />
+              <path d="M8 3.5v4M16 3.5v4M4 10h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+            Hari Ini, 24 Mei
+          </div>
+        </div>
+
+        <section class="target-card" aria-labelledby="target-title">
+          <span class="target-label"><span aria-hidden="true">♟</span> PRO TARGET</span>
+          <h2 id="target-title">Nabila Food Management!</h2>
+          <p>Target harian 350 pcs • 68% tercapai<br />sebelum jam 12:00.</p>
+          <div class="target-progress">
+            <span>Produk Sedang Dikemas</span>
+            <strong>238 / 350 pcs</strong>
+          </div>
+        </section>
+
+        <section class="section-block" aria-labelledby="quick-title">
+          <div class="section-heading">
+            <h2 id="quick-title">Aksi Cepat</h2>
+            <a href="#aktivitas">Semua Aksi</a>
+          </div>
+          <div class="quick-actions">
+            <a class="quick-action" href="#produksi">
+              <span class="action-icon action-green" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" /><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+              </span>
+              <span>+ Produksi</span>
+            </a>
+            <a class="quick-action" href="#bahan-baku">
+              <span class="action-icon action-amber" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 8h14v12H5zM4 5h16v3H4zM9 12h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </span>
+              <span>+ Bahan</span>
+            </a>
+            <a class="quick-action" href="#produk">
+              <span class="action-icon action-gray" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 16c1.5-4 4-6 8-6s6.5 2 8 6l-2 3H6l-2-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" /><path d="M9 14v2m3-3v3m3-2v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+              </span>
+              <span>+ Produk</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section-block" id="ringkasan" aria-labelledby="summary-title">
+          <div class="section-heading">
+            <h2 id="summary-title">Ringkasan Hari Ini</h2>
+          </div>
+          <div class="metrics-grid">
+            <article class="metric-card">
+              <div class="metric-top">
+                <span class="metric-icon metric-amber" aria-hidden="true">🛒</span>
+                <span class="metric-badge badge-green">+12%</span>
+              </div>
+              <p>Total Produk</p>
+              <strong>200 <small>pcs</small></strong>
+            </article>
+            <article class="metric-card" id="bahan-baku">
+              <div class="metric-top">
+                <span class="metric-icon metric-green" aria-hidden="true">☑</span>
+                <span class="metric-status">Aman</span>
+              </div>
+              <p>Bahan Baku</p>
+              <strong class="green-number">94% <small>tersedia</small></strong>
+            </article>
+            <article class="metric-card" id="produksi">
+              <div class="metric-top">
+                <span class="metric-icon metric-gray" aria-hidden="true">♨</span>
+                <span class="metric-status status-running">Running</span>
+              </div>
+              <p>Produksi</p>
+              <strong>4 <small>Batch</small></strong>
+            </article>
+            <article class="metric-card">
+              <div class="metric-top">
+                <span class="metric-icon metric-amber" aria-hidden="true">▤</span>
+                <span class="alert-dot" aria-label="Ada pesanan baru"></span>
+              </div>
+              <p>Pesanan Baru</p>
+              <strong>18 <small>pesanan</small></strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="produk" aria-labelledby="products-title">
+          <div class="section-heading product-heading">
+            <div>
+              <h2 id="products-title">Top Product Hari Ini</h2>
+              <p>Penjualan tercepat shift pagi</p>
+            </div>
+            <a href="#produk">Detail Menu</a>
+          </div>
+          <div class="product-list">
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <img src="assets/produk-ubi.png" alt="Keripik ubi ungu" />
+                <span class="best-label">#1 Best</span>
+              </div>
+              <div class="product-info">
+                <h3>Keripik Ubi Ungu Madu <span aria-label="favorit">★</span></h3>
+                <p>Choco Berry &amp; Red Velvet</p>
+                <div class="product-meta"><strong>84 pcs terjual</strong><span class="badge-green">↗28%</span></div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <img src="assets/produk-tempe.png" alt="Keripik tempe" />
+                <span class="best-label">#2 Best</span>
+              </div>
+              <div class="product-info">
+                <h3>Keripik Tempe</h3>
+                <p>Belgian Dark Ganache 70%</p>
+                <div class="product-meta"><strong>62 pcs terjual</strong><span class="stock-badge">Sisa 14 pcs</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block activity-block" id="aktivitas" aria-labelledby="activity-title">
+          <div class="section-heading">
+            <h2 id="activity-title">Aktivitas Oven &amp; Fermentasi</h2>
+            <span class="realtime">Realtime</span>
+          </div>
+          <div class="activity-list">
+            <article class="activity-item">
+              <span class="activity-icon activity-done" aria-hidden="true">✓</span>
+              <div class="activity-copy"><strong>Keripik Tempe</strong><span>Selesai dikemas • 48 pcs</span></div>
+              <time>07:45</time>
+            </article>
+            <article class="activity-item">
+              <span class="activity-icon activity-wait" aria-hidden="true">♨</span>
+              <div class="activity-copy"><strong>Keripik Ubi Ungu Madu</strong><span class="text-amber">Penggorengan • 170°C</span></div>
+              <time class="text-amber">12m lagi</time>
+            </article>
+            <article class="activity-item">
+              <span class="activity-icon activity-done" aria-hidden="true">✓</span>
+              <div class="activity-copy"><strong>Keripik Ubi Cilembu</strong><span>Selesai di Potong</span></div>
+              <time>08:15</time>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Navigasi utama">
+        <a class="nav-item nav-active" href="#dashboard" aria-current="page">
+          <span aria-hidden="true">▦</span><small>Dashboard</small>
+        </a>
+        <a class="nav-item" href="#bahan-baku">
+          <span aria-hidden="true">▤</span><small>Bahan Baku</small>
+        </a>
+        <a class="nav-item" href="#produk">
+          <span aria-hidden="true">♧</span><small>Produk</small>
+        </a>
+        <a class="nav-item" href="#produksi">
+          <span aria-hidden="true">♨</span><small>Produksi</small>
+        </a>
+        <a class="nav-item" href="#aktivitas">
+          <span aria-hidden="true">◷</span><small>Aktivitas</small>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>
