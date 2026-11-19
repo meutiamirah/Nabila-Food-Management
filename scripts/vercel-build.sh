@@ -13,6 +13,7 @@ if ! command -v flutter >/dev/null 2>&1; then
 fi
 
 export PATH="$FLUTTER_DIR/bin:$PATH"
+git config --global --add safe.directory "$FLUTTER_DIR"
 flutter --version
 flutter pub get
 flutter build web --release
