@@ -3,5 +3,12 @@
   "framework": null,
   "installCommand": "true",
   "buildCommand": "bash scripts/vercel-build.sh",
-  "outputDirectory": "build/web"
+  "outputDirectory": "build/web",
+  "redirects": [
+    {
+      "source": "/dashboard.html",
+      "destination": "/",
+      "permanent": false
+    }
+  ]
 }

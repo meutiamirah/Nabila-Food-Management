@@ -20,8 +20,8 @@
 
 Keep the Vercel project root set to this repository's root. The included
 [`vercel.json`](vercel.json) builds Flutter Web and publishes `build/web`,
-instead of serving the unrelated static HTML files in the repository root.
-The build script installs Flutter 3.47.4 when it is not already available.
+and redirects the old `/dashboard.html` URL to the Flutter app. The build
+script installs Flutter 3.47.4 when it is not already available.
 
 The app persists admin profiles, materials, products, production batches,
 activity history, and product/admin/production photos. Dashboard summary
